@@ -8,21 +8,23 @@
 <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
 </head>
 <body>
-    <div class="container text-center mt-2">
-        <h1 class = "alert alert-primary">
+    <div class="container text-center mt-2" style = "width: 30rem">
+      <div class="card" style="width: 30rem">
+        <h1 class = "alert alert-primary" >
         Temperature Input     
         </h1>
+        <div style ="display : flex; flex-direction: column; align-items: center;">
         <form method="post" action="/tempinp">
-        <div class="card">
             <h5 class="card-header">Please Enter Temperature in °C</h5>
             <div class="card-body">
                 <input type = "text" class = "form-control" placeholder="Please Enter Temp in °C" name = "temp" id = "temp">
-              <button type = "submit" class="btn btn-primary mt-2">Enter to DB</button>
+              <button type = "submit" class="btn btn-primary mt-2">Enter to DB</button>              
+              <h4 class = "mt-2"> Show the Chart </h4>
+              <a href = "/view" class = "btn btn-outline-success">Go to Chart</a>
             </div>
-          </div>
-        </form>
-        <h3> Show the Chart </h3>
-        <a href = "/view" class = "btn btn-outline-success">Go to Chart</a>
+          </form>
+            </div>
+        </div>  
 
         </div>
     
